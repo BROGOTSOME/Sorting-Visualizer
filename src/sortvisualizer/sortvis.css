@@ -1,11 +1,58 @@
-.array-container {
-  position: absolute;
-  left: 100px;
-  /* top: 100px; */
+/* Main container */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #2c2f33; /* Match the container background */
 }
 
+.array-container {
+  position: relative;
+  margin: auto;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2c2f33;
+  min-height: 100%;
+  padding: 20px;
+}
+
+/* Title styling */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Array bars */
 .array-bar {
-  width: 2px;
+  width: 3px;
   display: inline-block;
   margin: 0 1px;
+}
+
+/* Button container */
+.button-container {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+/* Buttons */
+button {
+  background-color: #7289da; /* Discord-like blue */
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #5b6eae;
 }
